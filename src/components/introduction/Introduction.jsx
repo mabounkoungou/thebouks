@@ -36,8 +36,8 @@ const Introduction = () => {
             </span>
           </p>
           <p className="text-xs xxs:text-lg lg:text-[18px] my-6">
-            I'm a Freelance <span className="bg-picto-primary">UI/UX Designer</span>{" "}
-            and <span className="bg-picto-primary"> Developer</span> based in
+            I'm a Freelance <span className="bg-highlight">UI/UX Designer</span>{" "}
+            and <span className="bg-highlight"> Developer</span> based in
             Accra, Ghana. I strive to build immersive and beautiful web
             applications through carefully crafted code and user-centric design.
           </p>
