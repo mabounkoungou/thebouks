@@ -2,18 +2,16 @@
 
 #### Preview
 
-- [Demo](https://themewagon.github.io/picto/)
+- [Demo](https://mabounkoungou.github.io/thebouks/)
 
-#### Download
 
-- [Download from ThemeWagon](https://themewagon.com/themes/picto)
 
 ## Getting Started
 
 1. Clone Repository
 
 ```
-git clone https://github.com/themewagon/picto.git
+git clone https://github.com/mabounkoungou/thebouks.git
 ```
 
 2. Install Dependencies
@@ -37,11 +35,6 @@ bun dev
 ## Author
 
 ```
-Developed by ThemeWagon and development team.
+Developed by Jabbar.
 ```
 
-## License
-
-- Design and Code is Copyright &copy; <a href="http://themewagon.com/" target="_blank">ThemeWagon</a>
-- Licensed cover under [MIT]
-- Developed by <a href="http://themewagon.com/" target="_blank">ThemeWagon</a>

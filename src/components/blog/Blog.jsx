@@ -29,7 +29,7 @@ const blogData = [
   {
     id: 1,
     image: img1,
-    date: "22 Oct, 2020",
+    date: "22 Oct, 2023",
     comments: 246,
     title: "Designing Engaging User Interfaces for Modern Web Apps",
     link: "#!",
@@ -37,7 +37,7 @@ const blogData = [
   {
     id: 2,
     image: img2,
-    date: "22 Oct, 2020",
+    date: "15 Sep, 2024",
     comments: 246,
     title: "Tips for Effective Dashboard Layouts and Usability",
     link: "#!",
@@ -45,7 +45,7 @@ const blogData = [
   {
     id: 3,
     image: img3,
-    date: "22 Oct, 2020",
+    date: "20 Jan, 2025",
     comments: 246,
     title: "How to Visualize Data for Better Product Decisions",
     link: "#!",
@@ -53,7 +53,7 @@ const blogData = [
   {
     id: 4,
     image: img4,
-    date: "22 Oct, 2020",
+    date: "02 Apr, 2025",
     comments: 246,
     title: "Responsive Design: Adapting to All Devices Seamlessly",
     link: "#!",
@@ -61,7 +61,7 @@ const blogData = [
   {
     id: 5,
     image: img2,
-    date: "22 Oct, 2020",
+    date: "10 Oct, 2025",
     comments: 246,
     title: "Streamlining Workflows with UI/UX Best Practices",
     link: "#!",
@@ -69,7 +69,7 @@ const blogData = [
   {
     id: 6,
     image: img1,
-    date: "22 Oct, 2020",
+    date: "10 Oct, 2025",
     comments: 246,
     title: "Optimizing Interface Components for Performance",
     link: "#!",
