@@ -63,19 +63,23 @@ const NavBar = () => {
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
-              </svg>
+  xmlns="http://www.w3.org/2000/svg"
+  className="h-5 w-5"
+  viewBox="0 0 100 100"
+  fill="currentColor"
+>
+  <text
+    x="50%"
+    y="70%"
+    textAnchor="middle"
+    fontSize="80"
+    fontFamily="Arial, Helvetica, sans-serif"
+    fontWeight="bold"
+  >
+    J
+  </text>
+</svg>
+Y
             </div>
             <ul
               tabIndex={0}
@@ -94,7 +98,7 @@ const NavBar = () => {
           >
             <img src={logo} className="h-8 sm:h-14 rounded-2xl" alt="logo" />
             <p className="text-2xl sm:text-[32px] my-auto ms-[12px] font-semibold">
-              Brooklyn
+              Jabbar
             </p>
           </Link>
         </div>
@@ -105,7 +109,7 @@ const NavBar = () => {
           </ul>
           <p className="">
             <Link
-              className="btn btn-sm xs:btn-md sm:btn-lg btn-primary"
+              className="btn btn-sm xs:btn-md sm:btn-lg btn-primary btn-rounded"
               href="#contact"
               to={`contact`}
               smooth={true}

@@ -7,17 +7,17 @@ const informationSummaryData = [
   {
     id: 1,
     title: "Experience",
-    description: "15 Y.",
+    description: "2 Y.",
   },
   {
     id: 2,
     title: "Projects Completed",
-    description: "250+",
+    description: "10+",
   },
   {
     id: 3,
     title: "Happy Clients",
-    description: "58",
+    description: "6",
   },
 ];
 
@@ -32,30 +32,32 @@ const Introduction = () => {
           <p className="text-3xl xxs:text-4xl sm:max-xl:text-5xl xl:text-6xl font-semibold w-full">
             Hello, I’m
             <span className="text-nowrap shrink-0 inline-block w-full">
-              Brooklyn Gilbert
+              Muhammed Al-Jabbar
             </span>
           </p>
           <p className="text-xs xxs:text-lg lg:text-[18px] my-6">
             I'm a Freelance <span className="bg-highlight">UI/UX Designer</span>{" "}
             and <span className="bg-highlight"> Developer</span> based in
-            London, England. I strives to build immersive and beautiful web
+            Accra, Ghana. I strives to build immersive and beautiful web
             applications through carefully crafted code and user-centric design.
           </p>
           <p className="text-center lg:text-start">
             <a
               className="btn-primary btn btn-xs xxs:btn-lg text-white"
-              href="mailto:example@gmail.com"
+              href="mailto:mobsbouk@gmail.com"
             >
-              Say Hello!
+              Mail me!
             </a>
           </p>
         </div>
-        <div className="mx-auto lg:mx-0 relative">
-          <div className="grid max-xxs:grid-flow-col grid-cols-3 w-fit mt-10 gap-1">
-            {informationSummaryData.map((item) => (
-              <InformationSummary key={item.id} item={item} />
-            ))}
-          </div>
+        <div className="mx-a
+        to lg:mx-0 relative">
+          <div className="grid max-xxs:grid-flow-col grid-cols-3 w-fit mt-10 gap-1 rounded-2xl bg-violet-100 p-4 shadow-md">
+  {informationSummaryData.map((item) => (
+    <InformationSummary key={item.id} item={item} />
+  ))}
+</div>
+
         </div>
       </div>
       <div
