@@ -68,16 +68,7 @@ const NavBar = () => {
   viewBox="0 0 100 100"
   fill="currentColor"
 >
-  <text
-    x="50%"
-    y="70%"
-    textAnchor="middle"
-    fontSize="80"
-    fontFamily="Arial, Helvetica, sans-serif"
-    fontWeight="bold"
-  >
-    J
-  </text>
+
 </svg>
 
             </div>
