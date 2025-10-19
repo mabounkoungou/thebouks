@@ -79,7 +79,7 @@ const NavBar = () => {
     J
   </text>
 </svg>
-Y
+
             </div>
             <ul
               tabIndex={0}
