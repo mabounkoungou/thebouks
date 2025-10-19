@@ -10,56 +10,56 @@ const projectData = [
   {
     id: 1,
     image: card1,
-    category: "UI-UX DESIGN",
-    title: "Product Admin Dashboard",
+    category: "Web Development",
+    title: "Laundry Service Website",
     description:
       "I focus on crafting smooth, responsive interfaces that balance aesthetic appeal with practical functionality.",
-    link: "#!",
+    link: "https://expresszoneaundry.page.gd",
   },
   {
     id: 2,
     image: card2,
-    category: "UI-UX DESIGN",
-    title: "Product Admin Dashboard",
+    category: "Web Development",
+    title: "Web based Learning Platform",
     description:
       "Designed an intuitive dashboard for product management, emphasizing clarity and user efficiency.",
-    link: "#!",
+    link: "https://learnfree.vercel.app/",
   },
   {
     id: 3,
     image: card3,
-    category: "UI-UX DESIGN",
-    title: "Product Admin Dashboard",
+    category: "Web Development",
+    title: "Web based Doctor Appointment",
     description:
       "Developed a modern admin panel with a focus on usability and seamless navigation for end users and so on.",
-    link: "#!",
+    link: "https://hci-gp-project.vercel.app/",
   },
   {
     id: 4,
     image: card4,
-    category: "UI-UX DESIGN",
-    title: "Product Admin Dashboard",
+    category: "Web Development",
+    title: "Web based Hospital Appointment",
     description:
       "Created a responsive dashboard layout that adapts smoothly across devices and screen sizes and so on.",
-    link: "#!",
+    link: "https://ridge-hospital.vercel.app/",
   },
   {
     id: 5,
     image: card5,
-    category: "UI-UX DESIGN",
-    title: "Product Admin Dashboard",
+    category: "Web Development",
+    title: "Web based Design tool",
     description:
       "Implemented interactive charts and widgets to visualize product data effectively for stakeholders.",
-    link: "#!",
+    link: "https://miro-delta.vercel.app/",
   },
   {
     id: 6,
     image: card6,
-    category: "UI-UX DESIGN",
-    title: "Product Admin Dashboard",
+    category: "Web Development",
+    title: "Web based Bulk SMS & Email Service",
     description:
       "Enhanced user experience by streamlining workflows and optimizing interface components and so on.",
-    link: "#!",
+    link: "https://upsa-bulk-mail-sender.vercel.app/",
   },
 ];
 
