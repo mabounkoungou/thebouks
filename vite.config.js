@@ -7,7 +7,7 @@ export default defineConfig(({ mode }) => {
 
   return {
     // 👇 Set base to "/" for Vercel
-    base: "/bouks",
+    base: "thebouks",
     plugins: [react(), tailwindcss()],
     server: {
       open: true,
