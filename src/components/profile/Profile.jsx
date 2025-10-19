@@ -62,7 +62,6 @@ const Profile = () => {
 >
   <FontAwesomeIcon icon={faDownload} /> Download CV
 </a>
-+++++++++++
           </div>
         </div>
       </div>

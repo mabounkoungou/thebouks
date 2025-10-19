@@ -1,18 +1,17 @@
 import {
-  faBehance,
-  faDribbble,
-  faFacebookF,
-  faInstagram,
+  faFigma,
+  faGithub,
   faLinkedin,
+  faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const socialIcons = [
-  { icon: faFacebookF, link: "#!" },
-  { icon: faDribbble, link: "#!" },
-  { icon: faInstagram, link: "#!" },
-  { icon: faLinkedin, link: "#!" },
-  { icon: faBehance, link: "#!" },
+  { icon: faGithub, link: "https://github.com/mabounkoungou" },
+  { icon: faFigma, link: "https://www.figma.com/files/team/1452585497457174406/" },
+  { icon: faWhatsapp, link: "https://wa.link/68szvp" },
+  { icon: faLinkedin, link: "https://www.linkedin.com/in/muhammed-al-jabbar-08b089238" },
+
 ];
 
 const SocialMedia = () => {

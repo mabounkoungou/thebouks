@@ -1,3 +1,7 @@
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
+import Swal from "sweetalert2";
+
 const telegramSVG = (
   <svg
     className="w-4 md:w-6 aspect-square"
@@ -16,6 +20,66 @@ const commonClass =
   "input input-lg border-0 border-b-2 focus:outline-none focus:placeholder:text-picto-primary placeholder:text-[15px] md:placeholder:text-lg focus:border-picto-primary border-[#E6E8EB] w-full rounded-none px-0";
 
 const Form = () => {
+  const formRef = useRef();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // --- EmailJS section ---
+    emailjs
+      .sendForm(
+        "service_xi9b75b",     // replace with your EmailJS service ID
+        "template_4f84riq",    // replace with your EmailJS template ID
+        formRef.current,
+        "E7NzxGlL5NtDPzFui"      // replace with your EmailJS public key
+      )
+.then(
+  () => {
+    Swal.fire({
+      title: "✅ Message Sent!",
+      text: "Your message was sent successfully via Email.",
+      icon: "success",
+      confirmButtonColor: "#9929fb",
+      background: "#fff",
+    });
+  },
+  (error) => {
+    Swal.fire({
+      title: "❌ Failed to Send",
+      text: "Error: " + error.text,
+      icon: "error",
+      confirmButtonColor: "#9929fb",
+      background: "#fff",
+    });
+  }
+);
+
+
+    // --- WhatsApp section ---
+    const phoneNumber = "233543826534"; // your WhatsApp number
+    const form = e.target;
+    const message = `
+New Contact Message:
+---------------------
+Name: ${form.Name.value}
+Email: ${form.Email.value}
+Location: ${form.Location.value}
+Budget: ${form.Budget.value} ".00"
+Subject: ${form.Subject.value}
+Message: ${form.Message.value}
+    `;
+
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+      message
+    )}`;
+
+    // Open WhatsApp in a new tab
+    window.open(whatsappURL, "_blank");
+
+    // Reset form fields
+    form.reset();
+  };
+
   return (
     <div>
       <p className="text-[12px] xs:text-[14px] max-lg:text-center sm:text-lg font-normal text-soft-dark">
@@ -23,50 +87,61 @@ const Form = () => {
         opportunities.
       </p>
       <div className="mx-2">
-        <form className="flex flex-col gap-4 mt-4">
+        <form
+          ref={formRef}
+          onSubmit={handleSubmit}
+          className="flex flex-col gap-4 mt-4"
+        >
           <input
+            name="Name"
             type="text"
             placeholder="Name*"
-            className={`${commonClass}`}
+            className={commonClass}
             required
           />
           <input
+            name="Email"
             type="email"
             placeholder="Email*"
-            className={`${commonClass}`}
+            className={commonClass}
             required
           />
           <input
+            name="Location"
             type="text"
             placeholder="Location*"
-            className={`${commonClass}`}
+            className={commonClass}
             required
           />
 
           <div className="flex max-xs:flex-col max-xs:gap-4">
             <input
+              name="Budget"
               type="text"
               placeholder="Budget*"
               className={`${commonClass} xs:w-[50%] me-5`}
               required
             />
             <input
+              name="Subject"
               type="text"
               placeholder="Subject*"
-              className={`${commonClass}`}
+              className={commonClass}
               required
             />
           </div>
 
           <input
+            name="Message"
             type="text"
             placeholder="Message*"
-            className={`${commonClass}`}
+            className={commonClass}
             required
           />
+
           <button
             type="submit"
-            className="btn gap-3 max-lg:mx-auto btn-primary rounded-sm mt-5 text-[13px] md:text-[16px] w-fit font-semibold lg:mt-12.5 p-2 md:px-4"
+            className="btn gap-3 max-lg:mx-auto btn-primary rounded-sm mt-5 text-[13px] md:text-[16px] w-fit font-semibold lg:mt-12.5 p-2 md:px-4 rounded-lg"
           >
             Submit {telegramSVG}
           </button>
